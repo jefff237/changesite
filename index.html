@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Resolution Platform</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="image.png">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Change Resolution Platform</h1>
+    <div class="form-group">
+      <label for="inputAmount">Enter the amount:</label>
+      <input type="number" class="form-control" id="inputAmount">
+    </div>
+    <button class="btn btn-primary" onclick="calculateChange()">Calculate Change</button>
+    <div id="changeResult"></div>
+  </div>
+
+  <script>
+  
+  function calculateChange() {
+    // Define the available bank notes
+    var notes = [10000, 5000, 2000, 1000, 500];
+
+    // Get the input amount
+    var amount = document.getElementById('inputAmount').value;
+
+    // Initialize the result
+    var result = '';
+
+    // Calculate the best possible breakdown
+    for (var i = 0; i < notes.length; i++) {
+      // Exclude the input amount from the breakdown if it is equivalent to a bank note
+      if (amount == notes[i]) {
+        continue;
+      }
+      if (amount >= notes[i]) {
+        var noteCount = Math.floor(amount / notes[i]);
+        amount -= noteCount * notes[i];
+        result += noteCount + ' note(s) of ' + notes[i] + '<br>';
+      }
+    }
+
+    // Display the result
+    document.getElementById('changeResult').innerHTML = result;
+  }
+
+
+  </script>
+</body>
+</html>

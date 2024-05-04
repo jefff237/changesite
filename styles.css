@@ -1,0 +1,48 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: Arial, sans-serif; /* Use Arial font and fallback to sans-serif */
+    line-height: 1.6; /* Improved readability with increased line height */
+  }
+  
+  .container {
+    max-width: 600px; /* Increased max-width for better content presentation */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff; /* White background for content */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+  }
+  
+  h1 {
+    margin-bottom: 30px; /* Slightly reduced margin for improved spacing */
+    text-align: center;
+    color: #333; /* Dark gray color for heading */
+    font-size: 2.5rem; /* Increased font size for a prominent heading */
+  }
+  
+  .form-group {
+    margin-bottom: 25px; /* Adjusted margin for better form element spacing */
+  }
+  
+  .btn-primary {
+    width: 100%; /* Full width for primary buttons */
+    padding: 12px; /* Increased padding for better button size */
+    border-radius: 5px; /* Rounded button corners */
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* White text color for better contrast */
+    font-size: 1.1rem; /* Slightly increased font size for button text */
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker color on button hover for visual feedback */
+  }
+  
+  #changeResult {
+    margin-top: 30px; /* Adjusted margin for better spacing */
+    padding: 20px; /* Increased padding for better content separation */
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+  }
+  
